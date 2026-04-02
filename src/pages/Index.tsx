@@ -321,19 +321,32 @@ export default function Index() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-3 mb-6 opacity-0 animate-fade-in-up" style={{animationFillMode:'forwards'}}>
+
+            {/* Hero Logo */}
+            <div className="mb-8 opacity-0 animate-fade-in-up" style={{animationFillMode:'forwards'}}>
+              <img
+                src="https://cdn.poehali.dev/projects/db51c89c-8106-4d76-b28f-893d07dc956c/bucket/b8c9a527-915a-4aa6-b94d-6670dd1ab64a.jpg"
+                alt="Прайм ЭкспертУм"
+                className="w-28 h-28 lg:w-36 lg:h-36 object-contain rounded-lg"
+                style={{
+                  filter: 'drop-shadow(0 0 24px rgba(201,168,76,0.3)) brightness(1.05)',
+                }}
+              />
+            </div>
+
+            <div className="flex items-center gap-3 mb-6 opacity-0 animate-fade-in-up delay-100" style={{animationFillMode:'forwards'}}>
               <div className="h-px w-10 bg-gold opacity-60" />
               <span className="font-ibm text-[10px] tracking-widest uppercase text-gold opacity-80">
                 Опыт 10+ лет · Члены СРО · Москва
               </span>
             </div>
 
-            <h1 className="font-cormorant text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] mb-6 opacity-0 animate-fade-in-up delay-100" style={{animationFillMode:'forwards'}}>
+            <h1 className="font-cormorant text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] mb-6 opacity-0 animate-fade-in-up delay-200" style={{animationFillMode:'forwards'}}>
               Экспертное заключение,<br />
               <span className="text-gold italic">которое примет суд</span>
             </h1>
 
-            <p className="font-ibm text-base lg:text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl opacity-0 animate-fade-in-up delay-200" style={{animationFillMode:'forwards'}}>
+            <p className="font-ibm text-base lg:text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl opacity-0 animate-fade-in-up delay-300" style={{animationFillMode:'forwards'}}>
               Проводим судебные экспертизы, готовим рецензии на экспертизы оппонента и помогаем выиграть дело. Работаем оперативно — от 1 до 7 дней.
             </p>
 
