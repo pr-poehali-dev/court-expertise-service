@@ -315,64 +315,64 @@ export default function Index() {
           <div className="hero-overlay absolute inset-0" />
         </div>
 
-        <div className="geometric-accent top-20 right-20 w-64 h-64 hidden lg:block" />
-        <div className="geometric-accent top-32 right-32 w-44 h-44 hidden lg:block" />
-        <div className="absolute top-1/3 right-16 w-px h-32 bg-gold opacity-20 hidden lg:block" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20 w-full">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="max-w-3xl">
+            {/* LEFT: текст */}
+            <div>
+              <div className="flex items-center gap-3 mb-6 opacity-0 animate-fade-in-up" style={{animationFillMode:'forwards'}}>
+                <div className="h-px w-10 bg-gold opacity-60" />
+                <span className="font-ibm text-[10px] tracking-widest uppercase text-gold opacity-80">
+                  Опыт 10+ лет · Члены СРО · Москва
+                </span>
+              </div>
 
-            {/* Hero Logo */}
-            <div className="mb-8 opacity-0 animate-fade-in-up" style={{animationFillMode:'forwards'}}>
+              <h1 className="font-cormorant text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] mb-6 opacity-0 animate-fade-in-up delay-100" style={{animationFillMode:'forwards'}}>
+                Экспертное заключение,<br />
+                <span className="text-gold italic">которое примет суд</span>
+              </h1>
+
+              <p className="font-ibm text-base lg:text-lg text-muted-foreground leading-relaxed mb-10 opacity-0 animate-fade-in-up delay-200" style={{animationFillMode:'forwards'}}>
+                Проводим судебные экспертизы, готовим рецензии на экспертизы оппонента и помогаем выиграть дело. Работаем оперативно — от 1 до 3 дней.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 mb-14 opacity-0 animate-fade-in-up delay-300" style={{animationFillMode:'forwards'}}>
+                <a href="#quiz">
+                  <button className="btn-gold">
+                    Бесплатный анализ проблемы
+                  </button>
+                </a>
+                <a href="#services">
+                  <button className="btn-outline-gold">
+                    Наши услуги
+                  </button>
+                </a>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4 opacity-0 animate-fade-in-up delay-400" style={{animationFillMode:'forwards'}}>
+                {advantages.map((a) => (
+                  <div key={a.num} className="border-l border-gold-dark pl-4">
+                    <div className="stat-number">{a.num}</div>
+                    <div className="font-cormorant text-sm text-gold-light">{a.label}</div>
+                    <div className="font-ibm text-[11px] text-muted-foreground mt-1">{a.desc}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* RIGHT: логотип */}
+            <div className="hidden lg:flex items-center justify-center opacity-0 animate-fade-in delay-300" style={{animationFillMode:'forwards'}}>
               <img
                 src="https://cdn.poehali.dev/projects/db51c89c-8106-4d76-b28f-893d07dc956c/bucket/b8c9a527-915a-4aa6-b94d-6670dd1ab64a.jpg"
                 alt="Прайм ЭкспертУм"
-                className="w-28 h-28 lg:w-36 lg:h-36 object-contain"
+                className="w-80 h-80 object-contain"
                 style={{
                   mixBlendMode: 'lighten',
-                  filter: 'drop-shadow(0 0 20px rgba(201,168,76,0.45)) contrast(1.1) brightness(1.1)',
+                  filter: 'drop-shadow(0 0 40px rgba(201,168,76,0.5)) contrast(1.1) brightness(1.15) saturate(1.1)',
                 }}
               />
             </div>
 
-            <div className="flex items-center gap-3 mb-6 opacity-0 animate-fade-in-up delay-100" style={{animationFillMode:'forwards'}}>
-              <div className="h-px w-10 bg-gold opacity-60" />
-              <span className="font-ibm text-[10px] tracking-widest uppercase text-gold opacity-80">
-                Опыт 10+ лет · Члены СРО · Москва
-              </span>
-            </div>
-
-            <h1 className="font-cormorant text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] mb-6 opacity-0 animate-fade-in-up delay-200" style={{animationFillMode:'forwards'}}>
-              Экспертное заключение,<br />
-              <span className="text-gold italic">которое примет суд</span>
-            </h1>
-
-            <p className="font-ibm text-base lg:text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl opacity-0 animate-fade-in-up delay-300" style={{animationFillMode:'forwards'}}>
-              Проводим судебные экспертизы, готовим рецензии на экспертизы оппонента и помогаем выиграть дело. Работаем оперативно — от 1 до 7 дней.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 mb-16 opacity-0 animate-fade-in-up delay-300" style={{animationFillMode:'forwards'}}>
-              <a href="#quiz">
-                <button className="btn-gold">
-                  Бесплатный анализ проблемы
-                </button>
-              </a>
-              <a href="#services">
-                <button className="btn-outline-gold">
-                  Наши услуги
-                </button>
-              </a>
-            </div>
-
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 opacity-0 animate-fade-in-up delay-400" style={{animationFillMode:'forwards'}}>
-              {advantages.map((a) => (
-                <div key={a.num} className="border-l border-gold-dark pl-4">
-                  <div className="stat-number">{a.num}</div>
-                  <div className="font-cormorant text-sm text-gold-light">{a.label}</div>
-                  <div className="font-ibm text-[11px] text-muted-foreground mt-1">{a.desc}</div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
 
