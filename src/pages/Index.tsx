@@ -327,9 +327,10 @@ export default function Index() {
               <img
                 src="https://cdn.poehali.dev/projects/db51c89c-8106-4d76-b28f-893d07dc956c/bucket/b8c9a527-915a-4aa6-b94d-6670dd1ab64a.jpg"
                 alt="Прайм ЭкспертУм"
-                className="w-28 h-28 lg:w-36 lg:h-36 object-contain rounded-lg"
+                className="w-28 h-28 lg:w-36 lg:h-36 object-contain"
                 style={{
-                  filter: 'drop-shadow(0 0 24px rgba(201,168,76,0.3)) brightness(1.05)',
+                  mixBlendMode: 'lighten',
+                  filter: 'drop-shadow(0 0 20px rgba(201,168,76,0.45)) contrast(1.1) brightness(1.1)',
                 }}
               />
             </div>
