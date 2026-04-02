@@ -36,9 +36,9 @@ const services = [
 ];
 
 const advantages = [
-  { num: "10+", label: "лет опыта", desc: "Понимаем все нюансы судебной системы" },
+  { num: "100+", label: "экспертов", desc: "Сертифицированные специалисты, члены СРО" },
   { num: "СРО", label: "членство", desc: "Максимальный авторитет заключений в суде" },
-  { num: "1–7", label: "дней", desc: "Оперативная подготовка документов" },
+  { num: "1–3", label: "дня", desc: "Срочная подготовка экспертизы" },
   { num: "100%", label: "прозрачность", desc: "Фиксированные цены без скрытых доплат" },
 ];
 
@@ -115,17 +115,19 @@ const blogPosts = [
     date: "25 марта 2025",
     category: "Экспертиза",
     readTime: "7 мин",
-    title: "Как оспорить экспертизу оппонента: пошаговое руководство",
-    excerpt: "Разбираем типичные методологические ошибки в экспертных заключениях и юридические инструменты для их оспаривания в суде. На что обращает внимание суд при оценке рецензии и как подготовить убедительный контраргумент.",
+    title: "Почему судебная экспертиза может решить исход дела",
+    excerpt: "В сложных судебных спорах аргументов сторон бывает недостаточно — суду нужно объективное подтверждение фактов. Разбираем, как правильно подготовленная экспертиза подтверждает вашу позицию, выявляет ошибки оппонента и ускоряет рассмотрение дела. Опыт эксперта и его членство в СРО напрямую определяют вес заключения.",
     tag: "Топ статья",
+    fullText: `Многие люди и компании сталкиваются с ситуацией, когда судебный спор заходит в тупик. Аргументы сторон уже представлены, документы поданы, но суду требуется объективное подтверждение фактов. Именно в этот момент решающую роль может сыграть судебная экспертиза.\n\nСудебная экспертиза — это независимое исследование, которое проводится специалистом с соответствующей квалификацией. Эксперт анализирует материалы дела, документы, технические данные и другие доказательства, после чего выдает официальное заключение.\n\nОднако важно понимать, что не каждая экспертиза одинаково сильна. Ошибки в методике, неполный анализ документов или отсутствие достаточной квалификации у эксперта могут привести к тому, что заключение будет оспорено. Именно поэтому выбор эксперта — критически важный этап.\n\nПрофессиональные судебные эксперты работают по строгим стандартам. Они используют утвержденные методики, тщательно изучают материалы дела и готовят заключение таким образом, чтобы оно было юридически корректным и убедительным для суда.\n\nГрамотно подготовленная экспертиза может: подтвердить вашу позицию; выявить ошибки в доводах оппонента; опровергнуть неправильно проведенные исследования; ускорить процесс рассмотрения дела.`,
   },
   {
     date: "10 марта 2025",
-    category: "СРО",
-    readTime: "5 мин",
-    title: "Почему членство эксперта в СРО критично для вашего дела",
-    excerpt: "Суды всё чаще требуют подтверждения квалификации эксперта. Объясняем, что такое СРО, какие виды существуют и почему это напрямую влияет на доверие суда к заключению.",
-    tag: null,
+    category: "Рецензия",
+    readTime: "6 мин",
+    title: "Как оспорить экспертизу оппонента и не проиграть дело",
+    excerpt: "Даже официальная экспертиза оппонента — не приговор. На практике многие заключения содержат методические ошибки, неточности или неполный анализ данных. Рассказываем пошагово: как проверить заключение, что такое рецензия и почему она может стать вашим главным козырем в суде.",
+    tag: "Новое",
+    fullText: `В судебных спорах нередко возникает ситуация, когда одна из сторон предоставляет экспертное заключение. Для противоположной стороны это может стать серьезной проблемой — суд часто рассматривает экспертизу как важное доказательство.\n\nОднако важно понимать: даже официальная экспертиза не всегда является безошибочной. На практике многие заключения содержат методические ошибки, неточности или неполный анализ данных.\n\nПервый шаг — внимательно изучить заключение: использованные методики, полноту анализа, корректность расчетов, соответствие выводов фактическим данным.\n\nСледующий этап — подготовка рецензии. Рецензия — это профессиональный анализ экспертного заключения другим специалистом. В ней указываются ошибки, нарушения методики и слабые места. Грамотная рецензия может стать основанием для назначения повторной экспертизы или признания заключения недостоверным.`,
   },
   {
     date: "20 февраля 2025",
@@ -134,6 +136,7 @@ const blogPosts = [
     title: "5 признаков того, что вам нужна рецензия на экспертизу",
     excerpt: "Когда имеет смысл оспаривать чужое заключение и каковы шансы на успех — реальные кейсы из практики. Разбираем три наглядных примера, когда рецензия полностью перевернула ход дела.",
     tag: null,
+    fullText: null,
   },
   {
     date: "5 февраля 2025",
@@ -142,6 +145,7 @@ const blogPosts = [
     title: "Строительная экспертиза: когда она обязательна и как её заказать",
     excerpt: "Все случаи, когда суд назначает строительно-техническую экспертизу в обязательном порядке. Что проверяют эксперты, какие документы нужны и как правильно сформулировать вопросы для эксперта.",
     tag: null,
+    fullText: null,
   },
   {
     date: "18 января 2025",
@@ -150,6 +154,7 @@ const blogPosts = [
     title: "Что делать, если суд назначил экспертизу — инструкция для стороны",
     excerpt: "Пошаговый план действий: от момента назначения экспертизы до получения заключения. Как правильно задать вопросы эксперту, как контролировать процесс и что можно оспорить.",
     tag: null,
+    fullText: null,
   },
   {
     date: "3 января 2025",
@@ -158,16 +163,17 @@ const blogPosts = [
     title: "Финансово-экономическая экспертиза в корпоративных спорах",
     excerpt: "Когда необходима финансовая экспертиза при разделе бизнеса, выходе участника из ООО или оспаривании сделок. Какие методы расчёта признаются судами наиболее авторитетными.",
     tag: null,
+    fullText: null,
   },
 ];
 
-const timeline = [
-  { year: "2014", event: "Основание компании. Первые судебные экспертизы в строительных спорах Москвы." },
-  { year: "2016", event: "Вступление ведущих экспертов в СРО. Расширение до финансово-экономической экспертизы." },
-  { year: "2018", event: "Более 300 успешно завершённых дел. Открытие направления рецензий на экспертизы." },
-  { year: "2020", event: "Выход на федеральный уровень. Работа с клиентами из 30+ регионов России." },
-  { year: "2023", event: "Команда 12 сертифицированных экспертов. Средний срок подготовки заключения — 4 дня." },
-  { year: "2025", event: "Более 800 успешных дел. Репутация одной из наиболее авторитетных экспертных компаний." },
+const aboutPoints = [
+  { icon: "Users", title: "100+ сертифицированных экспертов", desc: "Все специалисты состоят в СРО и имеют подтверждённую квалификацию. Работаем с юридическими и физическими лицами." },
+  { icon: "Zap", title: "Экстренность — от 1 до 3 дней", desc: "Понимаем, что время в суде решает всё. Гарантируем оперативную подготовку документов без потери качества." },
+  { icon: "Scale", title: "Полное сопровождение дела", desc: "Разовая услуга или полное ведение дела — выбираете вы. Составляем исковые заявления, жалобы и претензии." },
+  { icon: "Search", title: "Беспощадный анализ оппонента", desc: "Выявляем все процессуальные и методические ошибки в заключении оппонента. Наша рецензия — ваш главный козырь в суде." },
+  { icon: "Lock", title: "Конфиденциальность и прозрачность", desc: "Полная защита ваших данных. Стоимость озвучиваем сразу — без скрытых доплат и неожиданных расходов." },
+  { icon: "Award", title: "10+ лет на рынке юридических услуг", desc: "Решили сотни сложных споров. Наши заключения имеют максимальный вес в судебных разбирательствах любого уровня." },
 ];
 
 const quizSteps = [
@@ -241,20 +247,32 @@ export default function Index() {
     <div className="min-h-screen bg-navy-900 text-foreground overflow-x-hidden">
 
       {/* NAVIGATION */}
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-navy-900/95 backdrop-blur-sm">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-900/95 backdrop-blur-sm" style={{borderBottom: '1px solid rgba(201,168,76,0.12)'}}>
+        {/* Top cities bar */}
+        <div className="hidden lg:block border-b" style={{borderColor: 'rgba(255,255,255,0.05)', background: 'rgba(0,0,0,0.2)'}}>
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-8">
+            <div className="flex items-center gap-5">
+              <Icon name="MapPin" size={11} className="text-gold" />
+              {["Москва", "Краснодар", "Новороссийск", "Ростов-на-Дону"].map((city) => (
+                <span key={city} className="font-ibm text-[10px] text-muted-foreground tracking-wider hover:text-gold cursor-pointer transition-colors">{city}</span>
+              ))}
+            </div>
+            <span className="font-ibm text-[10px] text-muted-foreground">Работаем по всей России</span>
+          </div>
+        </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-14">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 border border-gold flex items-center justify-center">
                 <div className="w-4 h-4 bg-gold opacity-80" style={{clipPath: "polygon(50% 0%, 100% 100%, 0% 100%)"}} />
               </div>
               <div>
                 <div className="font-cormorant text-sm font-bold text-gold-light leading-tight tracking-wide">Прайм ЭкспертУм</div>
-                <div className="font-ibm text-[9px] text-muted-foreground tracking-widest uppercase">Судебные экспертизы</div>
+                <div className="font-ibm text-[9px] text-muted-foreground tracking-widest uppercase">Судебные экспертизы · СРО</div>
               </div>
             </div>
 
-            <div className="hidden lg:flex items-center gap-8">
+            <div className="hidden lg:flex items-center gap-6">
               {navLinks.map((l) => (
                 <a key={l.href} href={l.href} className="nav-link">{l.label}</a>
               ))}
@@ -288,7 +306,7 @@ export default function Index() {
       </nav>
 
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center pt-16" id="home">
+      <section className="relative min-h-screen flex items-center pt-24" id="home">
         <div className="absolute inset-0">
           <img src={HERO_IMAGE} alt="" className="w-full h-full object-cover" />
           <div className="hero-overlay absolute inset-0" />
@@ -388,72 +406,49 @@ export default function Index() {
               О компании <span className="text-gold italic">Прайм ЭкспертУм</span>
             </h2>
             <p className="font-ibm text-muted-foreground max-w-2xl leading-relaxed">
-              Мы не просто оказываем услуги — мы разделяем цель клиента: выиграть дело. За 10 лет работы наши эксперты прошли путь от рядовых специалистов до признанных авторитетов в судебной системе России.
+              Срочно нужна авторитетная экспертиза или рецензия для суда? Мы поможем убедительно обосновать вашу позицию. Команда из 100+ сертифицированных экспертов, членов СРО — наши заключения имеют максимальный вес в судебных спорах.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-start mb-16">
             <div>
               <p className="font-ibm text-muted-foreground leading-relaxed mb-5">
-                Компания основана практикующими судебными экспертами, хорошо знакомыми с реальными потребностями сторон в судебном процессе. Мы понимаем, что одно некачественное заключение может стоить клиенту не только денег, но и месяцев потерянного времени.
+                Мы работаем как с физическими, так и с юридическими лицами. Возможно разовое сотрудничество или полное сопровождение дела — составляем исковые заявления, жалобы, претензии и проводим правовой анализ документов.
               </p>
               <p className="font-ibm text-muted-foreground leading-relaxed mb-5">
-                Поэтому наш принцип — индивидуальный подход без шаблонов. Каждое дело проходит через тщательный анализ: мы изучаем материалы, выявляем ключевые точки влияния и строим заключение так, чтобы оно было неуязвимым для критики оппонента.
+                Не уверены в качестве экспертизы оппонента? Проведём беспощадный анализ уже готового заключения и выявим все процессуальные и методические ошибки. Наша рецензия станет вашим главным козырем в суде.
               </p>
               <p className="font-ibm text-muted-foreground leading-relaxed mb-8">
-                Дисциплина и соблюдение сроков — наша репутация. За 10 лет мы ни разу не сорвали договорный срок. Конфиденциальность — наш принцип: данные клиента и обстоятельства дела не раскрываются никогда.
+                Стоимость услуг рассчитывается индивидуально после консультации — и мы озвучиваем сумму сразу, без скрытых доплат. Не теряйте время и шансы на успех.
               </p>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                 {[
-                  { icon: "Award", title: "Членство в СРО", desc: "Все эксперты аккредитованы в СРО" },
-                  { icon: "Shield", title: "Конфиденциальность", desc: "Договор и экспертная тайна" },
-                  { icon: "Clock", title: "1–7 дней", desc: "Строгое соблюдение сроков" },
-                  { icon: "TrendingUp", title: "Фиксированная цена", desc: "Без скрытых платежей" },
-                ].map((item) => (
-                  <div key={item.title} className="bg-navy-800 border border-border p-5">
-                    <Icon name={item.icon} fallback="Circle" size={20} className="text-gold mb-3" />
-                    <div className="font-cormorant text-base font-semibold mb-1">{item.title}</div>
-                    <div className="font-ibm text-xs text-muted-foreground">{item.desc}</div>
+                  { num: "100+", label: "экспертов СРО" },
+                  { num: "10+", label: "лет опыта" },
+                  { num: "1–3", label: "дня срочно" },
+                  { num: "0", label: "скрытых доплат" },
+                ].map((s) => (
+                  <div key={s.label} className="bg-navy-800 border border-border p-5 text-center">
+                    <div className="font-cormorant text-3xl font-bold text-gold mb-1">{s.num}</div>
+                    <div className="font-ibm text-[11px] text-muted-foreground tracking-wide">{s.label}</div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div>
-              <div className="font-cormorant text-xl font-semibold mb-6 text-gold-light">История компании</div>
-              <div className="relative">
-                <div className="absolute left-3 top-0 bottom-0 w-px bg-border" />
-                <div className="space-y-6">
-                  {timeline.map((item, i) => (
-                    <div key={i} className="flex gap-6 relative">
-                      <div className="flex flex-col items-center flex-shrink-0">
-                        <div className="w-6 h-6 rounded-full border-2 border-gold bg-navy-900 flex items-center justify-center z-10">
-                          <div className="w-2 h-2 rounded-full bg-gold" />
-                        </div>
-                      </div>
-                      <div className="pb-2">
-                        <div className="font-cormorant text-lg font-bold text-gold mb-1">{item.year}</div>
-                        <div className="font-ibm text-sm text-muted-foreground leading-relaxed">{item.event}</div>
-                      </div>
-                    </div>
-                  ))}
+            <div className="grid grid-cols-1 gap-4">
+              {aboutPoints.map((item) => (
+                <div key={item.title} className="flex gap-4 bg-navy-800 border border-border p-5">
+                  <div className="w-9 h-9 border border-gold-dark flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Icon name={item.icon} fallback="Circle" size={16} className="text-gold" />
+                  </div>
+                  <div>
+                    <div className="font-cormorant text-base font-semibold mb-1">{item.title}</div>
+                    <div className="font-ibm text-xs text-muted-foreground leading-relaxed">{item.desc}</div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
-          </div>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              { num: "800+", label: "успешных дел" },
-              { num: "12", label: "сертифицированных экспертов" },
-              { num: "30+", label: "регионов России" },
-              { num: "0", label: "сорванных дедлайнов" },
-            ].map((s) => (
-              <div key={s.label} className="bg-navy-800 border border-border p-6 text-center">
-                <div className="font-cormorant text-4xl font-bold text-gold mb-2">{s.num}</div>
-                <div className="font-ibm text-xs text-muted-foreground tracking-wide">{s.label}</div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
