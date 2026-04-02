@@ -352,7 +352,7 @@ export default function Index() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-16 opacity-0 animate-fade-in-up delay-300" style={{animationFillMode:'forwards'}}>
-              <a href="#consult">
+              <a href="#quiz">
                 <button className="btn-gold">
                   Бесплатный анализ проблемы
                 </button>
