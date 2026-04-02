@@ -262,10 +262,13 @@ export default function Index() {
         </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-14">
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 border border-gold flex items-center justify-center">
-                <div className="w-4 h-4 bg-gold opacity-80" style={{clipPath: "polygon(50% 0%, 100% 100%, 0% 100%)"}} />
-              </div>
+            <div className="flex items-center gap-2">
+              <img
+                src="https://cdn.poehali.dev/projects/db51c89c-8106-4d76-b28f-893d07dc956c/bucket/b8c9a527-915a-4aa6-b94d-6670dd1ab64a.jpg"
+                alt="Прайм ЭкспертУм"
+                className="h-10 w-10 object-contain rounded"
+                style={{filter: 'brightness(1.05)'}}
+              />
               <div>
                 <div className="font-cormorant text-sm font-bold text-gold-light leading-tight tracking-wide">Прайм ЭкспертУм</div>
                 <div className="font-ibm text-[9px] text-muted-foreground tracking-widest uppercase">Судебные экспертизы · СРО</div>
@@ -775,12 +778,14 @@ export default function Index() {
           <div className="grid lg:grid-cols-3 gap-10">
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-8 h-8 border border-gold flex items-center justify-center">
-                  <div className="w-4 h-4 bg-gold opacity-80" style={{clipPath: "polygon(50% 0%, 100% 100%, 0% 100%)"}} />
-                </div>
+                <img
+                  src="https://cdn.poehali.dev/projects/db51c89c-8106-4d76-b28f-893d07dc956c/bucket/b8c9a527-915a-4aa6-b94d-6670dd1ab64a.jpg"
+                  alt="Прайм ЭкспертУм"
+                  className="h-12 w-12 object-contain rounded"
+                />
                 <div>
                   <div className="font-cormorant text-sm font-bold text-gold-light tracking-wide">Прайм ЭкспертУм</div>
-                  <div className="font-ibm text-[9px] text-muted-foreground tracking-widest uppercase">Судебные экспертизы</div>
+                  <div className="font-ibm text-[9px] text-muted-foreground tracking-widest uppercase">Судебные экспертизы · СРО</div>
                 </div>
               </div>
               <p className="font-ibm text-xs text-muted-foreground leading-relaxed">
