@@ -361,14 +361,14 @@ export default function Index() {
             </div>
 
             {/* RIGHT: логотип */}
-            <div className="hidden lg:flex items-center justify-center opacity-0 animate-fade-in delay-300" style={{animationFillMode:'forwards'}}>
+            <div className="flex items-center justify-center">
               <img
                 src="https://cdn.poehali.dev/projects/db51c89c-8106-4d76-b28f-893d07dc956c/bucket/b8c9a527-915a-4aa6-b94d-6670dd1ab64a.jpg"
                 alt="Прайм ЭкспертУм"
-                className="w-80 h-80 object-contain"
+                className="w-64 h-64 lg:w-96 lg:h-96 object-contain"
                 style={{
-                  mixBlendMode: 'lighten',
-                  filter: 'drop-shadow(0 0 40px rgba(201,168,76,0.5)) contrast(1.1) brightness(1.15) saturate(1.1)',
+                  mixBlendMode: 'screen',
+                  filter: 'drop-shadow(0 0 48px rgba(201,168,76,0.6)) brightness(1.2) contrast(1.05) saturate(1.15)',
                 }}
               />
             </div>
