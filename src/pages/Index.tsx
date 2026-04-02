@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Эксперты", href: "#experts" },
   { label: "Кейсы", href: "#cases" },
   { label: "Блог", href: "#blog" },
+  { label: "Квиз", href: "#quiz" },
   { label: "FAQ", href: "#faq" },
   { label: "Контакты", href: "#contacts" },
 ];
@@ -111,35 +112,130 @@ const faqItems = [
 
 const blogPosts = [
   {
-    date: "18 марта 2025",
+    date: "25 марта 2025",
     category: "Экспертиза",
+    readTime: "7 мин",
     title: "Как оспорить экспертизу оппонента: пошаговое руководство",
-    excerpt: "Разбираем типичные ошибки в экспертных заключениях и юридические инструменты для их оспаривания в суде.",
+    excerpt: "Разбираем типичные методологические ошибки в экспертных заключениях и юридические инструменты для их оспаривания в суде. На что обращает внимание суд при оценке рецензии и как подготовить убедительный контраргумент.",
+    tag: "Топ статья",
+  },
+  {
+    date: "10 марта 2025",
+    category: "СРО",
+    readTime: "5 мин",
+    title: "Почему членство эксперта в СРО критично для вашего дела",
+    excerpt: "Суды всё чаще требуют подтверждения квалификации эксперта. Объясняем, что такое СРО, какие виды существуют и почему это напрямую влияет на доверие суда к заключению.",
+    tag: null,
+  },
+  {
+    date: "20 февраля 2025",
+    category: "Практика",
+    readTime: "6 мин",
+    title: "5 признаков того, что вам нужна рецензия на экспертизу",
+    excerpt: "Когда имеет смысл оспаривать чужое заключение и каковы шансы на успех — реальные кейсы из практики. Разбираем три наглядных примера, когда рецензия полностью перевернула ход дела.",
+    tag: null,
   },
   {
     date: "5 февраля 2025",
-    category: "СРО",
-    title: "Почему членство эксперта в СРО критично для вашего дела",
-    excerpt: "Суды всё чаще требуют подтверждения квалификации эксперта. Объясняем, что такое СРО и почему это важно.",
+    category: "Строительство",
+    readTime: "8 мин",
+    title: "Строительная экспертиза: когда она обязательна и как её заказать",
+    excerpt: "Все случаи, когда суд назначает строительно-техническую экспертизу в обязательном порядке. Что проверяют эксперты, какие документы нужны и как правильно сформулировать вопросы для эксперта.",
+    tag: null,
   },
   {
-    date: "14 января 2025",
-    category: "Практика",
-    title: "5 признаков того, что вам нужна рецензия на экспертизу",
-    excerpt: "Когда имеет смысл оспаривать чужое заключение и каковы шансы на успех — реальные кейсы из практики.",
+    date: "18 января 2025",
+    category: "Советы",
+    readTime: "4 мин",
+    title: "Что делать, если суд назначил экспертизу — инструкция для стороны",
+    excerpt: "Пошаговый план действий: от момента назначения экспертизы до получения заключения. Как правильно задать вопросы эксперту, как контролировать процесс и что можно оспорить.",
+    tag: null,
+  },
+  {
+    date: "3 января 2025",
+    category: "Финансы",
+    readTime: "5 мин",
+    title: "Финансово-экономическая экспертиза в корпоративных спорах",
+    excerpt: "Когда необходима финансовая экспертиза при разделе бизнеса, выходе участника из ООО или оспаривании сделок. Какие методы расчёта признаются судами наиболее авторитетными.",
+    tag: null,
   },
 ];
+
+const timeline = [
+  { year: "2014", event: "Основание компании. Первые судебные экспертизы в строительных спорах Москвы." },
+  { year: "2016", event: "Вступление ведущих экспертов в СРО. Расширение до финансово-экономической экспертизы." },
+  { year: "2018", event: "Более 300 успешно завершённых дел. Открытие направления рецензий на экспертизы." },
+  { year: "2020", event: "Выход на федеральный уровень. Работа с клиентами из 30+ регионов России." },
+  { year: "2023", event: "Команда 12 сертифицированных экспертов. Средний срок подготовки заключения — 4 дня." },
+  { year: "2025", event: "Более 800 успешных дел. Репутация одной из наиболее авторитетных экспертных компаний." },
+];
+
+const quizSteps = [
+  {
+    question: "Какова ваша ситуация?",
+    options: [
+      { label: "Суд назначил экспертизу по нашему делу", value: "court" },
+      { label: "Оппонент предоставил экспертизу, с которой я не согласен", value: "opponent" },
+      { label: "Хочу оценить ситуацию до подачи иска", value: "pre" },
+      { label: "Ещё не определился / нужна консультация", value: "unclear" },
+    ],
+  },
+  {
+    question: "К какой категории относится ваш спор?",
+    options: [
+      { label: "Строительство, ремонт, недвижимость", value: "build" },
+      { label: "Бизнес, корпоративные отношения", value: "corp" },
+      { label: "Документы, подписи, рукописи", value: "doc" },
+      { label: "Другое / не знаю точно", value: "other" },
+    ],
+  },
+  {
+    question: "Как срочно вам нужен результат?",
+    options: [
+      { label: "Очень срочно — суд уже скоро", value: "urgent" },
+      { label: "В ближайшие 1–2 недели", value: "soon" },
+      { label: "Времени достаточно, важнее качество", value: "quality" },
+    ],
+  },
+];
+
+const quizResults: Record<string, { title: string; desc: string; cta: string }> = {
+  court: { title: "Судебная экспертиза", desc: "Мы подготовим авторитетное заключение, которое суд примет с первого раза. Эксперты-члены СРО гарантируют методологическую безупречность.", cta: "Заказать экспертизу" },
+  opponent: { title: "Рецензия на экспертизу", desc: "Найдём все слабые места в заключении оппонента и подготовим убедительную рецензию, которая убедит суд его отклонить.", cta: "Заказать рецензию" },
+  pre: { title: "Досудебная оценка", desc: "Бесплатно проанализируем вашу ситуацию, оценим перспективы и выработаем оптимальную стратегию ещё до подачи иска.", cta: "Получить оценку" },
+  unclear: { title: "Бесплатная консультация", desc: "Расскажите о своей ситуации — эксперт поможет определить, какая именно услуга вам нужна, и ответит на все вопросы.", cta: "Записаться на консультацию" },
+};
 
 export default function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [formData, setFormData] = useState({ name: "", phone: "", question: "" });
   const [formSent, setFormSent] = useState(false);
+  const [quizStep, setQuizStep] = useState(0);
+  const [quizAnswers, setQuizAnswers] = useState<string[]>([]);
+  const [quizSelected, setQuizSelected] = useState<string | null>(null);
+  const [quizDone, setQuizDone] = useState(false);
+  const [blogExpanded, setBlogExpanded] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setFormSent(true);
   };
+
+  const handleQuizNext = () => {
+    if (!quizSelected) return;
+    const next = [...quizAnswers, quizSelected];
+    setQuizAnswers(next);
+    setQuizSelected(null);
+    if (quizStep + 1 >= quizSteps.length) {
+      setQuizDone(true);
+    } else {
+      setQuizStep(quizStep + 1);
+    }
+  };
+
+  const quizResult = quizResults[quizAnswers[0] ?? "unclear"];
+  const visiblePosts = blogExpanded ? blogPosts : blogPosts.slice(0, 3);
 
   return (
     <div className="min-h-screen bg-navy-900 text-foreground overflow-x-hidden">
@@ -286,48 +382,78 @@ export default function Index() {
       {/* ABOUT */}
       <section id="about" className="py-24 bg-navy-900">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="mb-14">
+            <div className="gold-line" />
+            <h2 className="font-cormorant text-4xl lg:text-5xl font-bold mb-4">
+              О компании <span className="text-gold italic">Прайм ЭкспертУм</span>
+            </h2>
+            <p className="font-ibm text-muted-foreground max-w-2xl leading-relaxed">
+              Мы не просто оказываем услуги — мы разделяем цель клиента: выиграть дело. За 10 лет работы наши эксперты прошли путь от рядовых специалистов до признанных авторитетов в судебной системе России.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-start mb-16">
             <div>
-              <div className="gold-line" />
-              <h2 className="font-cormorant text-4xl lg:text-5xl font-bold mb-6">
-                О компании<br /><span className="text-gold italic">Прайм ЭкспертУм</span>
-              </h2>
-              <p className="font-ibm text-muted-foreground leading-relaxed mb-6">
-                Мы не просто оказываем услуги — мы разделяем цель клиента: выиграть дело. За 10 лет работы наши эксперты прошли путь от рядовых специалистов до признанных авторитетов в своих областях.
+              <p className="font-ibm text-muted-foreground leading-relaxed mb-5">
+                Компания основана практикующими судебными экспертами, хорошо знакомыми с реальными потребностями сторон в судебном процессе. Мы понимаем, что одно некачественное заключение может стоить клиенту не только денег, но и месяцев потерянного времени.
+              </p>
+              <p className="font-ibm text-muted-foreground leading-relaxed mb-5">
+                Поэтому наш принцип — индивидуальный подход без шаблонов. Каждое дело проходит через тщательный анализ: мы изучаем материалы, выявляем ключевые точки влияния и строим заключение так, чтобы оно было неуязвимым для критики оппонента.
               </p>
               <p className="font-ibm text-muted-foreground leading-relaxed mb-8">
-                Каждое дело — уникально. Мы изучаем нюансы, а не используем шаблоны. Дисциплина и соблюдение сроков — наша репутация. Конфиденциальность — наш принцип.
+                Дисциплина и соблюдение сроков — наша репутация. За 10 лет мы ни разу не сорвали договорный срок. Конфиденциальность — наш принцип: данные клиента и обстоятельства дела не раскрываются никогда.
               </p>
-              <div className="space-y-3">
+              <div className="grid grid-cols-2 gap-4">
                 {[
-                  "Солидарны с целью клиента — работаем на результат",
-                  "Строго соблюдаем дедлайны в отличие от рынка",
-                  "Заключения принимаются судом без лишних вопросов",
+                  { icon: "Award", title: "Членство в СРО", desc: "Все эксперты аккредитованы в СРО" },
+                  { icon: "Shield", title: "Конфиденциальность", desc: "Договор и экспертная тайна" },
+                  { icon: "Clock", title: "1–7 дней", desc: "Строгое соблюдение сроков" },
+                  { icon: "TrendingUp", title: "Фиксированная цена", desc: "Без скрытых платежей" },
                 ].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <div className="w-4 h-4 mt-0.5 flex-shrink-0">
-                      <Icon name="CheckSquare" size={16} className="text-gold" />
-                    </div>
-                    <span className="font-ibm text-sm text-foreground/80">{item}</span>
+                  <div key={item.title} className="bg-navy-800 border border-border p-5">
+                    <Icon name={item.icon} fallback="Circle" size={20} className="text-gold mb-3" />
+                    <div className="font-cormorant text-base font-semibold mb-1">{item.title}</div>
+                    <div className="font-ibm text-xs text-muted-foreground">{item.desc}</div>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { icon: "Award", title: "Членство в СРО", desc: "Все эксперты состоят в саморегулируемых организациях" },
-                { icon: "Shield", title: "Конфиденциальность", desc: "Полная защита данных и экспертная тайна" },
-                { icon: "Clock", title: "1–7 дней", desc: "Оперативная подготовка без ущерба качеству" },
-                { icon: "TrendingUp", title: "Фиксированная цена", desc: "Никаких скрытых платежей и переделок" },
-              ].map((item) => (
-                <div key={item.title} className="bg-navy-700 border border-border p-6">
-                  <Icon name={item.icon} fallback="Circle" size={24} className="text-gold mb-4" />
-                  <div className="font-cormorant text-lg font-semibold mb-2">{item.title}</div>
-                  <div className="font-ibm text-xs text-muted-foreground leading-relaxed">{item.desc}</div>
+            <div>
+              <div className="font-cormorant text-xl font-semibold mb-6 text-gold-light">История компании</div>
+              <div className="relative">
+                <div className="absolute left-3 top-0 bottom-0 w-px bg-border" />
+                <div className="space-y-6">
+                  {timeline.map((item, i) => (
+                    <div key={i} className="flex gap-6 relative">
+                      <div className="flex flex-col items-center flex-shrink-0">
+                        <div className="w-6 h-6 rounded-full border-2 border-gold bg-navy-900 flex items-center justify-center z-10">
+                          <div className="w-2 h-2 rounded-full bg-gold" />
+                        </div>
+                      </div>
+                      <div className="pb-2">
+                        <div className="font-cormorant text-lg font-bold text-gold mb-1">{item.year}</div>
+                        <div className="font-ibm text-sm text-muted-foreground leading-relaxed">{item.event}</div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { num: "800+", label: "успешных дел" },
+              { num: "12", label: "сертифицированных экспертов" },
+              { num: "30+", label: "регионов России" },
+              { num: "0", label: "сорванных дедлайнов" },
+            ].map((s) => (
+              <div key={s.label} className="bg-navy-800 border border-border p-6 text-center">
+                <div className="font-cormorant text-4xl font-bold text-gold mb-2">{s.num}</div>
+                <div className="font-ibm text-xs text-muted-foreground tracking-wide">{s.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -416,22 +542,38 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-6">
-            {blogPosts.map((p, i) => (
-              <article key={i} className="card-hover bg-navy-700 border border-border p-8 cursor-pointer">
-                <div className="flex items-center gap-3 mb-4">
+          <div className="grid lg:grid-cols-3 gap-6 mb-8">
+            {visiblePosts.map((p, i) => (
+              <article key={i} className="card-hover bg-navy-700 border border-border p-8 cursor-pointer flex flex-col">
+                <div className="flex items-center gap-2 mb-4 flex-wrap">
                   <span className="font-ibm text-[10px] px-2 py-0.5 border border-gold-dark text-gold tracking-wider uppercase">{p.category}</span>
-                  <span className="font-ibm text-[11px] text-muted-foreground">{p.date}</span>
+                  {p.tag && (
+                    <span className="font-ibm text-[10px] px-2 py-0.5 bg-gold text-navy-900 font-semibold tracking-wider">{p.tag}</span>
+                  )}
                 </div>
                 <h3 className="font-cormorant text-xl font-semibold mb-3 leading-snug">{p.title}</h3>
-                <p className="font-ibm text-xs text-muted-foreground leading-relaxed mb-6">{p.excerpt}</p>
-                <div className="flex items-center gap-2 text-gold">
-                  <span className="font-ibm text-[11px] tracking-wider uppercase">Читать</span>
-                  <Icon name="ArrowRight" size={12} />
+                <p className="font-ibm text-xs text-muted-foreground leading-relaxed mb-6 flex-1">{p.excerpt}</p>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-gold">
+                    <span className="font-ibm text-[11px] tracking-wider uppercase">Читать</span>
+                    <Icon name="ArrowRight" size={12} />
+                  </div>
+                  <div className="flex items-center gap-1 text-muted-foreground">
+                    <Icon name="Clock" size={11} />
+                    <span className="font-ibm text-[11px]">{p.readTime}</span>
+                  </div>
                 </div>
+                <div className="font-ibm text-[10px] text-muted-foreground/60 mt-3 pt-3 border-t border-border">{p.date}</div>
               </article>
             ))}
           </div>
+          {!blogExpanded && blogPosts.length > 3 && (
+            <div className="text-center">
+              <button className="btn-outline-gold" onClick={() => setBlogExpanded(true)}>
+                Показать все статьи ({blogPosts.length})
+              </button>
+            </div>
+          )}
         </div>
       </section>
 
@@ -465,6 +607,96 @@ export default function Index() {
                 )}
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* QUIZ */}
+      <section id="quiz" className="py-24 bg-navy-700">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <div className="gold-line" style={{width: 60, margin: '0 auto 1.5rem'}} />
+            <h2 className="font-cormorant text-4xl lg:text-5xl font-bold mb-4">
+              Подберите услугу<br /><span className="text-gold italic">за 3 вопроса</span>
+            </h2>
+            <p className="font-ibm text-muted-foreground">
+              Ответьте на несколько вопросов — мы подскажем, какая именно помощь нужна в вашей ситуации
+            </p>
+          </div>
+
+          <div className="bg-navy-800 border border-border p-8 lg:p-10">
+            {!quizDone ? (
+              <>
+                <div className="progress-bar mb-8">
+                  <div
+                    className="progress-bar-fill"
+                    style={{width: `${((quizStep) / quizSteps.length) * 100}%`}}
+                  />
+                </div>
+                <div className="flex items-center justify-between mb-6">
+                  <span className="font-ibm text-[11px] text-muted-foreground tracking-wider uppercase">
+                    Вопрос {quizStep + 1} из {quizSteps.length}
+                  </span>
+                  {quizStep > 0 && (
+                    <button
+                      className="font-ibm text-[11px] text-muted-foreground hover:text-gold transition-colors flex items-center gap-1"
+                      onClick={() => { setQuizStep(quizStep - 1); setQuizAnswers(quizAnswers.slice(0,-1)); setQuizSelected(null); }}
+                    >
+                      <Icon name="ArrowLeft" size={12} /> Назад
+                    </button>
+                  )}
+                </div>
+                <h3 className="font-cormorant text-2xl font-semibold mb-6">
+                  {quizSteps[quizStep].question}
+                </h3>
+                <div className="space-y-3 mb-8">
+                  {quizSteps[quizStep].options.map((opt) => (
+                    <button
+                      key={opt.value}
+                      className={`quiz-option ${quizSelected === opt.value ? "selected" : ""}`}
+                      onClick={() => setQuizSelected(opt.value)}
+                    >
+                      <div className="flex items-center gap-3">
+                        <div className={`w-4 h-4 rounded-full border flex-shrink-0 flex items-center justify-center transition-colors ${quizSelected === opt.value ? "border-gold bg-gold" : "border-muted-foreground"}`}>
+                          {quizSelected === opt.value && <div className="w-2 h-2 rounded-full bg-navy-900" />}
+                        </div>
+                        <span className="font-ibm text-sm text-foreground">{opt.label}</span>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+                <button
+                  className="btn-gold w-full"
+                  onClick={handleQuizNext}
+                  disabled={!quizSelected}
+                  style={{opacity: quizSelected ? 1 : 0.5, cursor: quizSelected ? "pointer" : "not-allowed"}}
+                >
+                  {quizStep + 1 >= quizSteps.length ? "Получить рекомендацию" : "Следующий вопрос"}
+                </button>
+              </>
+            ) : (
+              <div className="text-center">
+                <div className="w-14 h-14 border border-gold flex items-center justify-center mx-auto mb-6">
+                  <Icon name="CheckCircle" size={28} className="text-gold" />
+                </div>
+                <div className="font-ibm text-[11px] text-gold tracking-widest uppercase mb-3">Рекомендация готова</div>
+                <h3 className="font-cormorant text-3xl font-bold mb-4">{quizResult?.title}</h3>
+                <p className="font-ibm text-sm text-muted-foreground leading-relaxed mb-8 max-w-md mx-auto">
+                  {quizResult?.desc}
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a href="#consult">
+                    <button className="btn-gold">{quizResult?.cta}</button>
+                  </a>
+                  <button
+                    className="btn-outline-gold"
+                    onClick={() => { setQuizStep(0); setQuizAnswers([]); setQuizSelected(null); setQuizDone(false); }}
+                  >
+                    Пройти заново
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>

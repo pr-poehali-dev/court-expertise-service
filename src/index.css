@@ -4,53 +4,53 @@
 
 @layer base {
   :root {
-    --background: 220 35% 7%;
-    --foreground: 45 25% 90%;
+    --background: 218 30% 14%;
+    --foreground: 45 20% 92%;
 
-    --card: 220 30% 10%;
-    --card-foreground: 45 25% 90%;
+    --card: 218 28% 18%;
+    --card-foreground: 45 20% 92%;
 
-    --popover: 220 30% 10%;
-    --popover-foreground: 45 25% 90%;
+    --popover: 218 28% 18%;
+    --popover-foreground: 45 20% 92%;
 
-    --primary: 43 65% 58%;
-    --primary-foreground: 220 35% 7%;
+    --primary: 43 65% 55%;
+    --primary-foreground: 218 30% 10%;
 
-    --secondary: 220 25% 15%;
-    --secondary-foreground: 45 25% 85%;
+    --secondary: 218 22% 24%;
+    --secondary-foreground: 45 20% 88%;
 
-    --muted: 220 25% 14%;
-    --muted-foreground: 220 15% 55%;
+    --muted: 218 22% 22%;
+    --muted-foreground: 218 12% 60%;
 
-    --accent: 43 65% 58%;
-    --accent-foreground: 220 35% 7%;
+    --accent: 43 65% 55%;
+    --accent-foreground: 218 30% 10%;
 
     --destructive: 0 62.8% 40%;
-    --destructive-foreground: 45 25% 90%;
+    --destructive-foreground: 45 20% 92%;
 
-    --border: 220 25% 18%;
-    --input: 220 25% 16%;
-    --ring: 43 65% 58%;
+    --border: 218 20% 26%;
+    --input: 218 20% 24%;
+    --ring: 43 65% 55%;
 
     --radius: 0.25rem;
 
-    --navy-900: #06080f;
-    --navy-800: #0b1120;
-    --navy-700: #101c33;
-    --navy-600: #162444;
-    --navy-500: #1e3260;
+    --navy-900: #131c2e;
+    --navy-800: #1a2540;
+    --navy-700: #202e4e;
+    --navy-600: #293a60;
+    --navy-500: #334a78;
     --gold: #c9a84c;
     --gold-light: #e2c97e;
     --gold-dark: #9e7a2e;
 
-    --sidebar-background: 220 35% 9%;
-    --sidebar-foreground: 45 25% 85%;
-    --sidebar-primary: 43 65% 58%;
-    --sidebar-primary-foreground: 220 35% 7%;
-    --sidebar-accent: 220 25% 14%;
-    --sidebar-accent-foreground: 45 25% 85%;
-    --sidebar-border: 220 25% 18%;
-    --sidebar-ring: 43 65% 58%;
+    --sidebar-background: 218 30% 16%;
+    --sidebar-foreground: 45 20% 88%;
+    --sidebar-primary: 43 65% 55%;
+    --sidebar-primary-foreground: 218 30% 10%;
+    --sidebar-accent: 218 22% 22%;
+    --sidebar-accent-foreground: 45 20% 88%;
+    --sidebar-border: 218 20% 26%;
+    --sidebar-ring: 43 65% 55%;
   }
 }
 
@@ -120,15 +120,15 @@
     background: linear-gradient(90deg, transparent, var(--gold), transparent);
     height: 1px;
     width: 100%;
-    opacity: 0.3;
+    opacity: 0.25;
   }
 
   .hero-overlay {
     background: linear-gradient(
       135deg,
-      rgba(6, 8, 15, 0.95) 0%,
-      rgba(11, 17, 32, 0.88) 50%,
-      rgba(22, 36, 68, 0.8) 100%
+      rgba(19, 28, 46, 0.93) 0%,
+      rgba(26, 37, 64, 0.84) 50%,
+      rgba(41, 58, 96, 0.72) 100%
     );
   }
 
@@ -139,7 +139,7 @@
     transform: translateY(-4px);
     border-color: var(--gold-dark);
     box-shadow:
-      0 20px 40px rgba(0, 0, 0, 0.4),
+      0 20px 40px rgba(0, 0, 0, 0.3),
       0 0 0 1px rgba(201, 168, 76, 0.2);
   }
 
@@ -155,14 +155,13 @@
     border: none;
     cursor: pointer;
     transition: all 0.2s ease;
-    position: relative;
-    overflow: hidden;
   }
   .btn-gold:hover {
     background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
     box-shadow: 0 8px 25px rgba(201, 168, 76, 0.35);
     transform: translateY(-1px);
   }
+
   .btn-outline-gold {
     background: transparent;
     color: var(--gold);
@@ -176,7 +175,7 @@
     transition: all 0.2s ease;
   }
   .btn-outline-gold:hover {
-    background: rgba(201, 168, 76, 0.08);
+    background: rgba(201, 168, 76, 0.1);
     border-color: var(--gold);
   }
 
@@ -186,7 +185,7 @@
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(229, 210, 160, 0.7);
+    color: rgba(229, 210, 160, 0.65);
     transition: color 0.2s;
   }
   .nav-link:hover {
@@ -203,7 +202,7 @@
 
   .geometric-accent {
     position: absolute;
-    border: 1px solid rgba(201, 168, 76, 0.12);
+    border: 1px solid rgba(201, 168, 76, 0.1);
     pointer-events: none;
   }
 
@@ -225,6 +224,7 @@
       opacity: 1;
     }
   }
+
   .animate-fade-in-up {
     animation: fadeInUp 0.8s ease forwards;
   }
@@ -248,5 +248,37 @@
   }
   .delay-600 {
     animation-delay: 0.6s;
+  }
+
+  .quiz-option {
+    background: var(--navy-700);
+    border: 1px solid;
+    border-color: rgba(201, 168, 76, 0.15);
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+    width: 100%;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: inherit;
+  }
+  .quiz-option:hover {
+    border-color: var(--gold-dark);
+    background: var(--navy-600);
+  }
+  .quiz-option.selected {
+    border-color: var(--gold);
+    background: rgba(201, 168, 76, 0.1);
+  }
+
+  .progress-bar {
+    height: 2px;
+    background: var(--border);
+    position: relative;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold-dark), var(--gold));
+    transition: width 0.4s ease;
   }
 }
