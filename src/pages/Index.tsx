@@ -323,7 +323,7 @@ export default function Index() {
               <div className="flex items-center gap-3 mb-6 opacity-0 animate-fade-in-up" style={{animationFillMode:'forwards'}}>
                 <div className="h-px w-10 bg-gold opacity-60" />
                 <span className="font-ibm text-[10px] tracking-widest uppercase text-gold opacity-80">
-                  Опыт 10+ лет · Члены СРО · Москва
+                  Опыт 10+ лет · Члены СРО · Москва · Ростов-на-Дону · Краснодар · Новороссийск · По всей России и странам СНГ
                 </span>
               </div>
 
